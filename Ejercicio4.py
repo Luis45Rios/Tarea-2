@@ -1,7 +1,15 @@
-"""4) Realiza un programa que pida al usuario cuantos números quiere introducir. 
-Luego lee todos los números y realiza una media aritmética:"""
-suma = 0
-numeros = int(input("¿Cuántos números quieres introducir? ") )
-for x in range(numeros):
- suma += float(input("Introduce un número: ") )
-print("Se han introducido",numeros,"números que en total han sumado",suma)
+"""4) Realiza una función llamada intermedio() que a partir de dos números, devuelva su punto 
+intermedio:
+
+Nota: El número intermedio de dos números corresponde a la suma de los dos números dividida 
+entre 2
+
+Comprueba el punto intermedio entre -12 y 24"""
+num1 = -12
+num2 = 24
+
+def intermedio():
+    suma = num1 + num2
+    resultado = suma / 2 
+    print(resultado)
+print(intermedio)

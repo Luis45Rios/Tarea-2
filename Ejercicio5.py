@@ -1,15 +1,14 @@
-"""5) Realiza un programa que pida al usuario un número entero del 0 al 9, y que mientras el 
-número no sea correcto se repita el proceso. Luego debe comprobar si el número se encuentra en 
-la lista de números y notificarlo:
+"""5) Realiza una función llamada recortar() que reciba tres parámetros. El primero es el 
+número a recortar, el segundo es el límite inferior y el tercero el límite superior. 
+La función tendrá que cumplir lo siguiente:
 
-Consejo: La sintaxis "valor in lista" permite comprobar fácilmente si un valor se encuentra en 
-una lista (devuelve True o False)"""
-while True:
-    numero = int(input("Escribe un número del 0 al 9: "))
-    numeros = ("No es correcto")
-    if numero >= 0 and numero <= 9:
-        break
-    if numero in numeros:
-        print("El número",numero,"se encuentra en la lista",numeros)
-    else:
-        print("El número",numero,"no se encuentra en la lista",numeros)
+Devolver el límite inferior si el número es menor que éste
+Devolver el límite superior si el número es mayor que éste.
+Devolver el número sin cambios si no se supera ningún límite.
+Comprueba el resultado de recortar 15 entre los límites 0 y 10"""
+
+def recortar(num, lim_inf, lim_sup):
+    return max(min(num, lim_sup), lim_inf)
+
+recortar(15, 0, 10)
+print(recortar)

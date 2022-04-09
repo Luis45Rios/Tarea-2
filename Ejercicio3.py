@@ -1,9 +1,17 @@
-"""3) Realiza un programa que sume todos los números enteros pares desde el 0 hasta el 100:"""
+"""Realiza una función llamada relacion() que a partir de dos números cumpla lo siguiente:
 
-"""Paso 1: Hacer na variable"""
-def numeroPar(num):
-    num = range(1, 102)
-    if num >= 2:
-        return num % 2
-    print(num)
-print(numeroPar)
+Si el primer número es mayor que el segundo, debe devolver 1.
+Si el primer número es menor que el segundo, debe devolver -1.
+Si ambos números son iguales, debe devolver un 0.
+Comprueba la relación entre los números: '5 y 10', '10 y 5' y '5 y 5'"""
+num1 =int(5)
+num2 = int(10)
+
+def relacion(num1,num2):
+    if num1 > num2:
+        print(1)
+    if num1 < num2:
+        print(-1)
+    elif num1 == num2:
+        print(0)
+print(relacion)

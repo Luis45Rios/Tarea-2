@@ -1,7 +1,9 @@
-"""2) Realiza un programa que lea un número impar por teclado. Si el usuario no introduce 
-un número impar, debe repetise el proceso hasta que lo introduzca correctamente."""
-numero = int(input("Ingrese un número impar: ")) 
+"""2) Realiza una función llamada area_circulo() que devuelva el área de un círculo a partir 
+de un radio. Calcula el área de un círculo de 5 de radio:
+Nota: El área de un círculo se obtiene al elevar el radio a dos y multiplicando el resultado
+por el número pi. Puedes utilizar el valor 3.14159 como pi o importarlo del módulo math:"""
 
-while numero % 1 == 0: # Mientras sea par repetimos el proceso
-    else:
-        
+def area_circulo():
+    resultado = 5 ** 2
+    area = resultado * 3.14159
+print(area_circulo)
